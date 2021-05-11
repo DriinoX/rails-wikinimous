@@ -1,0 +1,8 @@
+<h1> <%= @article.title %></h1>
+
+<p> <%= @article.content %></p>
+
+<i class="fa fa-pencil"> <%= link_to "" ,  edit_article_path %> </i>
+<%= link_to '<i class="fa fa-trash-o"> </i>', article_path, method: :delete%>
+
+<%= link_to 'Back menu',  articles_path %>
